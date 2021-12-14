@@ -1,5 +1,7 @@
 package com.epam.ld.javabasics2_1.interfaces;
 
+import com.epam.ld.javabasics2_1.interfaces.enums.Color;
+import com.epam.ld.javabasics2_1.interfaces.enums.Shape;
 import com.epam.ld.javabasics2_1.interfaces.item.*;
 import org.junit.jupiter.api.Test;
 
@@ -24,21 +26,21 @@ class BasketTest {
         bookmark.setName("Red bookmark");
         bookmark.setPrice(0.14);
         bookmark.setSupplier(supplier1);
-        bookmark.setColor("red");
+        bookmark.setColor(Color.RED);
         bookmark.setMaterial("wood");
 
         Flowerpot flowerpot = new Flowerpot();
         flowerpot.setName("Blue pot");
         flowerpot.setPrice(5.00);
         flowerpot.setSupplier(supplier2);
-        flowerpot.setColor("blue");
-        flowerpot.setShape("round");
+        flowerpot.setColor(Color.BLUE);
+        flowerpot.setShape(Shape.ROUND);
 
         Fridge fridge = new Fridge();
         fridge.setName("Atlant MX");
         fridge.setPrice(400.50);
         fridge.setSupplier(supplier2);
-        fridge.setColor("white");
+        fridge.setColor(Color.WHITE);
         fridge.setMake("Atlant");
         fridge.setModel("MX");
 
@@ -54,7 +56,7 @@ class BasketTest {
         spruce.setPrice(800.99);
         spruce.setSupplier(supplier2);
         spruce.setType("Norway spruce");
-        spruce.setColor("green");
+        spruce.setColor(Color.GREEN);
         spruce.setHeight(300);
 
         List<IShopItem> items = new ArrayList<>();

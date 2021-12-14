@@ -1,27 +1,29 @@
 package com.epam.ld.javabasics2_1.interfaces.item;
 
 import com.epam.ld.javabasics2_1.interfaces.AShopItem;
+import com.epam.ld.javabasics2_1.interfaces.enums.Color;
+import com.epam.ld.javabasics2_1.interfaces.enums.Shape;
 
 import java.util.Objects;
 
 public class Flowerpot extends AShopItem {
 
-    private String shape;
-    private String color;
+    private Shape shape;
+    private Color color;
 
-    public String getShape() {
+    public Shape getShape() {
         return shape;
     }
 
-    public void setShape(String shape) {
+    public void setShape(Shape shape) {
         this.shape = shape;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

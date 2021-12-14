@@ -1,19 +1,20 @@
 package com.epam.ld.javabasics2_1.interfaces.item;
 
 import com.epam.ld.javabasics2_1.interfaces.AShopItem;
+import com.epam.ld.javabasics2_1.interfaces.enums.Color;
 
 import java.util.Objects;
 
 public class Bookmark extends AShopItem {
 
-    private String color;
+    private Color color;
     private String material;
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

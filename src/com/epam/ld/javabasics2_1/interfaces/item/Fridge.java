@@ -1,6 +1,7 @@
 package com.epam.ld.javabasics2_1.interfaces.item;
 
 import com.epam.ld.javabasics2_1.interfaces.AShopItem;
+import com.epam.ld.javabasics2_1.interfaces.enums.Color;
 
 import java.util.Objects;
 
@@ -8,7 +9,7 @@ public class Fridge extends AShopItem {
 
     private String make;
     private String model;
-    private String color;
+    private Color color;
 
     public String getMake() {
         return make;
@@ -26,11 +27,11 @@ public class Fridge extends AShopItem {
         this.model = model;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 

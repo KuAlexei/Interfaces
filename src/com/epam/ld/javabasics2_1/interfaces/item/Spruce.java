@@ -1,13 +1,14 @@
 package com.epam.ld.javabasics2_1.interfaces.item;
 
 import com.epam.ld.javabasics2_1.interfaces.AShopItem;
+import com.epam.ld.javabasics2_1.interfaces.enums.Color;
 
 import java.util.Objects;
 
 public class Spruce extends AShopItem {
 
     private String type;
-    private String color;
+    private Color color;
     private int height;
 
     public String getType() {
@@ -18,11 +19,11 @@ public class Spruce extends AShopItem {
         this.type = type;
     }
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
 
-    public void setColor(String color) {
+    public void setColor(Color color) {
         this.color = color;
     }
 
